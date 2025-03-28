@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0; /* Colore di sfondo chiaro */
+  font-family: Arial, sans-serif;
+  color: #333333; /* Colore del testo */
+}
+
+/* Stile Cyberpunk per il titolo */
+.title {
+  font-size: 6rem; /* Grandezza del font per un impatto maggiore */
+  color: #0f0f0f; /* Colore di base scuro per il testo */
+  text-shadow: 0 0 10px rgba(76, 0, 255, 0.7), 0 0 30px rgba(0, 255, 47, 0.675),
+    0 0 40px rgba(0, 255, 255, 0.3); /* Ombre luminose e sfumate */
+  letter-spacing: 3px; /* Aumenta lo spazio tra le lettere per un effetto futuristico */
+  text-transform: uppercase; /* Rendiamo il testo maiuscolo */
+  text-align: center; /* Allineamento al centro */
+  background: linear-gradient(
+    90deg,
+    #ff00f0,
+    #00ffff
+  ); /* Gradiente che va dal rosa al ciano per un tocco cyberpunk */
+  -webkit-background-clip: text; /* Applica il gradiente solo al testo */
+  color: transparent; /* Rende il testo trasparente per far vedere il gradiente */
+  padding: 10px; /* Distanza dal bordo */
+  border-radius: 10px; /* Bordo arrotondato per un look più futuristico */
+  margin: 10px 0; /* Distanza dalle altre sezioni */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3); /* Effetto di bagliore */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+}
+
+.box-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Assicurati che occupi tutta la larghezza */
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 0;
+  margin: 0;
+  background-color: #1d1010; /* Sfondo scuro per la card */
+  box-shadow: 2px 2px 2px rgb(67, 34, 1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out; /* Aggiunto effetto di transizione */
+}
+
+.card:hover {
+  transform: scale(
+    1.1
+  ); /* Aggiunto effetto di ingrandimento quando passiamo il mouse sopra */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Aumentata l'ombra quando si passa sopra */
+}
+
+.card img {
+  width: 110px;
+  height: 160px;
+  object-fit: contain; /* Assicurati che l'immagine non distorca */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 3px solid #4caf50; /* Bordi verde per evidenziare gli input */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 300px;
+  background-color: #f9f9f9; /* Colore di sfondo chiaro per gli input */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #2196f3; /* Cambia il colore del bordo quando l'input è in focus */
+  outline: none; /* Rimuove il contorno blu di default */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Colore verde per il bottone */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transizione per l'effetto hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Colore più scuro per il bottone quando passa sopra */
+}
+
+select {
+  background-color: #f9f9f9; /* Colore di sfondo chiaro per il select */
+}

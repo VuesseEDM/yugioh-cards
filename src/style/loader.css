@@ -1,0 +1,25 @@
+/* src/components/Loader.css */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.imgLoad {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 5s linear infinite; /* Applica l'animazione di rotazione */
+}
+
+/* Crea l'animazione di rotazione */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* All'inizio, l'elemento non è ruotato */
+  }
+  100% {
+    transform: rotate(
+      360deg
+    ); /* Alla fine, l'elemento è ruotato di 360 gradi */
+  }
+}

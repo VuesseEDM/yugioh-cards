@@ -1,0 +1,7 @@
+/* src/components/Loader.css */
+body {
+  background-image: url("/img/kuribo.gif"); /* Assicurati che il percorso sia relativo alla cartella public */
+  background-size: contain; /* L'immagine coprirà l'intera pagina */
+  background-attachment: fixed; /* Lo sfondo rimane fisso mentre scorri */
+  margin: 0; /* Rimuove i margini di default del body */
+}

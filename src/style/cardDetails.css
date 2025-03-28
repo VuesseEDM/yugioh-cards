@@ -1,0 +1,30 @@
+.card-details {
+  display: flex;
+  flex-direction: column; /* Imposta la direzione verticale */
+  align-items: center; /* Centra gli elementi orizzontalmente */
+  margin-top: 40px; /* Margine superiore per distanziare dal bordo superiore */
+}
+
+.card-details img {
+  width: 500px;
+  height: 600px;
+  object-fit: contain; /* Assicurati che l'immagine non distorca */
+}
+
+.back-button {
+  width: 120px; /* Dimensione più piccola */
+  height: 40px; /* Dimensione più piccola */
+  padding: 5px 10px; /* Riduci il padding */
+  background-color: #00ffff; /* Colore neon */
+  color: rgb(19, 2, 2);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Dimensione del testo più piccola */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Margine superiore per distanziare dall'immagine */
+}
+
+.back-button:hover {
+  background-color: #ff00ff; /* Cambia colore al passaggio del mouse */
+}
